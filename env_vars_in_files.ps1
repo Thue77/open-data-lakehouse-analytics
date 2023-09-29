@@ -1,9 +1,5 @@
 # Create list variable of file names in which secrets should be substituted
-$files = @(
-    ".\etc\catalog\adls2.properties.temp",
-    ".\etc\catalog\delta.properties.temp",
-    ".\conf\metastore-site.xml.temp"
-)
+$files = @(".\etc\catalog\adls2.properties.temp",".\etc\catalog\delta.properties.temp",".\conf\metastore-site.xml.temp")
 
 Write-Host "Substituting variables for Trino catalogs"
 foreach($file in $files){
