@@ -78,16 +78,16 @@
     </property>
     <property>
         <name>fs.azure.account.oauth2.client.id</name>
-        <value></value>
+        <value>${azure_client_oauth2_id}</value>
         <description>
-            ${azure_client_oauth2_id}
+            Client id for Azure service principal
         </description>
     </property>
     <property>
         <name>fs.azure.account.oauth2.client.secret</name>
-        <value></value>
+        <value>${azure_client_oauth2_secret}</value>
         <description>
-            ${azure_client_oauth2_secret}
+            Secret for Azure service principal
         </description>
     </property>
 
