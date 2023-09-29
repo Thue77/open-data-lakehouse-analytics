@@ -1,4 +1,5 @@
 # Introduction
+This repo is meant to be a development environment for analytics on lakehouse defined in the repo [open-data-lakehouse](https://github.com/Thue77/open-data-lakehouse). The project holds scripts that are sepcifically relevant for my project, but the general structure can be resused for any lake based data warehouse. 
 
 # Architecture
 
