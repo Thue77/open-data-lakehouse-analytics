@@ -13,6 +13,23 @@ Secrets need to be stored as environmental variables. The following suggests a p
 
 ## Spinning up containers
 
+### Superset
+After spinning up container for the first time, the following commands should be executed from inside the superset container:
+
+- `
+superset fab create-admin \
+              --username admin \
+              --firstname Superset \
+              --lastname Admin \
+              --email admin@superset.com \
+              --password admin
+`
+
+- `superset db upgrade`
+- `superset init`
+
+See more in the [Docker Hub](https://hub.docker.com/r/apache/superset)
+
 
 # Delta Lake example - From bitsondatadev/trino-getting-started
 
