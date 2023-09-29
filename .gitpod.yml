@@ -5,12 +5,10 @@
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
 tasks:
-  - name: install powershell
-    command: bash delta-lake/gitpod/install.sh
-
   - name: run docker images
-    init: pwsh 
-    command: delta-lake/docker-compose up -d
+    before: bash install.sh
+    init: pwsh env_vars_in_files.ps1
+    command: docker-compose up -d
 
 ports:
   - name: trino
