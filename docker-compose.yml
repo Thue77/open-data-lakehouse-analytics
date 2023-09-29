@@ -39,7 +39,7 @@ services:
 
   superset:
     build: 
-      context: ./
+      context: ./docker
       dockerfile: superset/Dockerfile
     container_name: superset
     ports:
