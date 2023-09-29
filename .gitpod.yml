@@ -19,3 +19,7 @@ ports:
     port: 9001
     visibility: private
 
+  - name: superset
+    port: 8088
+    visibility: private
+
